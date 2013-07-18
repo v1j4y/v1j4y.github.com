@@ -1,21 +1,15 @@
 ---
 layout: page
-title: Vijay Gopal CHILKURI
+title: Vijay's
 tagline: quantumchemistry blog
 ---
 {% include JB/setup %}
 
-Read [LCPQ/IRSAMC](http://irsamc.ups-tlse.fr)
 
 
-## Update Author Attributes
+A PhD student at the [LCPQ/IRSAMC](http://www.lcpq.ups-tlse.fr) working on
+the problems of Quantum Chemistry.
 
-
-    title : My Blog on quantumchemistry and my attemps to understand the world.
-
-    author : Vijay
-      name : CHILKURI
-      email : vijay.gopal.c@gmail.com
-      github : vijaygopalchilkuri
-      twitter : vijaygopalchilk
+I have a few demonstrations on some simple physical/quantum mechanical ideas,
+Fork me on [github](http://github.com/vijaygopalchilkuri)
 
