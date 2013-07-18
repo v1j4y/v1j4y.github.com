@@ -5,5 +5,4 @@ description: ""
 category:
 tags: []
 ---
-![My image]({{ site.url }}/assets/image.jpg)
 {% include JB/setup %}
