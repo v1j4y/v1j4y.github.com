@@ -47,8 +47,6 @@
       </div>
   </div>
 
-
-
 <!-- Put this just before the closing body tag -->
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
@@ -73,6 +71,20 @@
       <p><g:plusone size="medium"></g:plusone></p>
   </div>
 
+  <script>
+            MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+    code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+  </script>
 
   <!-- Add this just before the closing body tag of your web page -->
   <script type="text/javascript">
