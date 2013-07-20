@@ -1,10 +1,11 @@
 /* Custom container */
 .container-narrow {
-  margin: 0 auto;
+/*  margin: 0 auto; */
+  margin: 05px auto;
   max-width: 700px; }
 
 .container-narrow > hr {
-  margin: 30px 0; }
+  margin: 30px auto; }
 
 .navbar .nav {
   float: right; }
