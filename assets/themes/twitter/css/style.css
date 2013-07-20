@@ -10,6 +10,11 @@
 .navbar .nav {
   float: right; }
 
+.cse .gsc-control-wrapper-cse,
+.gsc-control-wrapper-cse {
+  width: 50%;
+}
+
 /* posts index */
 .post > h3.title {
   position: relative;

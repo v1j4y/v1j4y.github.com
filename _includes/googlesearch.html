@@ -1,8 +1,14 @@
 <script language="Javascript" type="text/javascript">
   function googlesearch()
   {
-    var query = document.getElementById("ggsearch").value;
-    window.open("http://google.com/search?q=" + query
-    + "%20site:" + "vijaygopal.fr");
+    var cx = '012414079361229462804:svda_pnb9bg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementById("ggsearch").value;
+    s.parentNode.insertBefore(gcse, s);
   }
 </script>
+<gcse:search></gcse:search>
