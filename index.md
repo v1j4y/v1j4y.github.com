@@ -18,7 +18,7 @@ I have a few demonstrations on some simple physical/quantum mechanical ideas,
 Fork me on [github](http://github.com/vijaygopalchilkuri)
 
 I have another blog on my Raspberry Pi at home :
-[Pi](http:109.21.246.125)
+[Pi](http://109.21.246.125)
 
 See my [About](./About.html) page for details.
 
