@@ -17,6 +17,8 @@ the problems of Quantum Chemistry.
 I have a few demonstrations on some simple physical/quantum mechanical ideas,
 Fork me on [github](http://github.com/vijaygopalchilkuri)
 
+see my Gems on my ruby page : [RubyGems](http://rubygems.org/profiles/dr1bl3)
+
 I have another blog on my Raspberry Pi at home :
 [Pi](http://109.21.246.125)
 
