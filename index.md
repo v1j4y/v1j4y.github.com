@@ -15,7 +15,7 @@ A PhD student at the [LCPQ/IRSAMC](http://www.lcpq.ups-tlse.fr) working on
 the problems of Quantum Chemistry.
 
 I have a few demonstrations on some simple physical/quantum mechanical ideas,
-Fork me on [github](http://github.com/vijaygopalchilkuri)
+Fork me on [github](http://github.com/v1j4y)
 
 see my Gems on my ruby page : [RubyGems](http://rubygems.org/profiles/dr1bl3)
 
