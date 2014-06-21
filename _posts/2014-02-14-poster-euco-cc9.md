@@ -8,4 +8,3 @@ tags: [poster]
 {% include JB/setup %}
 
 ![Image](/images/EUCO_CC9/poster.jpg)
-
