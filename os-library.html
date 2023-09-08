@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+<style type="text/css">
+
+table th {
+    padding: 0.5em;
+    border: 1px solid tomato;
+}
+
+table td {
+    padding: 0.5em;
+    border: 1px solid tomato;
+}
+
+table td:hover {
+    background-color: violet;
+}
+
+table td:focus {
+    background-color: grey;
+}
+table  {
+  border-collapse : collapse;
+  font-family     : Arial, Helvetica, sans-serif;
+  }
+table caption,
+table th,
+table td {
+  padding : .2em .8em;
+  border  : 1px solid darkslategray;
+  }
+table caption {
+  border-bottom  : none;
+  font-weight    : bold;
+  letter-spacing : .2em;
+  font-variant   : small-caps;
+  }
+table thead {
+  background-color : #c3e3ee;
+  text-align       : left;
+  }
+</style>
+
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RESTA_TPS</title>
+</head>
+<body>
+    <div id="myData"></div>
+    <script>
+        fetch('https://api.zotero.org/groups/5174499/items?key=1XEShc20UHVhgeXHboW6fdSL&limit=100&sort=title')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+          // var mainContainer = document.getElementById("myData");
+          let start = document.querySelector('div');
+          let table = document.createElement('table');
+          let row = document.createElement('tr');
+          // Create a table-head
+          var abecedary = [' ','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+          var tableHead = document.createElement('THEAD');
+
+          for (var i = 0; i < data.length; i++) {
+             // var div = document.createElement("table");
+             let td = document.createElement('td');
+
+            if (data[i].data.title != "Full Text PDF" && data[i].data.title != "APS Snapshot") {
+              td.innerHTML = ' ' + data[i].data.title + ', <i>' + data[i].data.publicationTitle + '</i>, (' + data[i].data.date + '), <b>, ' + data[i].data.volume + '</b>, ' + data[i].data.issue + ' ->  <a href=' + data[i].data.url + '> link </a> ';
+              row.appendChild(td);
+              table.appendChild(row) //want that it add new row after each 7 days
+              row = document.createElement('tr');
+
+              // div.innerHTML = 'Name: ' + data[i].data.title + ' ' + data[i].data.year + ' ' + data[i].data.url;
+              //mainContainer.appendChild(div);
+            }
+
+          }
+
+          table.appendChild(row)
+          start.appendChild(table)
+        }
+    </script>
+</body>
+</html>
