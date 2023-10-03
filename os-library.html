@@ -74,7 +74,7 @@ table thead {
              // var div = document.createElement("table");
              let td = document.createElement('td');
 
-            if (data[i].data.title != "Full Text PDF" && data[i].data.title != "APS Snapshot" && data[i].data.title != "Full Text" && data[i].data.title != "Snapshot") {
+            if (data[i].data.title != "Full Text PDF" && data[i].data.title != "APS Snapshot" && data[i].data.title != "ACS Full Text" && data[i].data.title != "Full Text" && data[i].data.title != "Snapshot") {
               td.innerHTML = ' ' + data[i].data.title + ', <i>' + data[i].data.publicationTitle + '</i>, (' + data[i].data.date + '), <b>, ' + data[i].data.volume + '</b>, ' + data[i].data.issue + ' ->  <a href=' + data[i].data.url + '> link </a> ';
               row.appendChild(td);
               table.appendChild(row) //want that it add new row after each 7 days
